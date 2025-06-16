@@ -1,0 +1,155 @@
+/*root*/
+:root {
+    --clr-primary-Cyan: hsl(179, 62%, 43%);
+    --clr-primary-Off-Cyan: hsla(179, 62%, 43%, 0.8);
+    --clr-primary-Bright-Yellow: hsl(71, 73%, 54%);
+
+    --clr-neutral-Light-Gray: hsl(204, 43%, 93%);
+    --clr-neutral-Grayish-Blue: hsl(218, 22%, 67%);
+
+
+    --ff: "Karla", sans-serif;
+    --fs-body: 1rem;
+    --fs-title: 1.75rem;
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+/*reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--ff);
+    font-weight: var(--fw-400);
+    font-size: var(--fs-body);
+    color: var(--clr-neutral-Grayish-Blue);
+    background-color: var(--clr-neutral-Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+}
+
+.card-container {
+    margin: 1.5rem;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.community-section {
+    padding: 1.5rem;
+}
+
+.title {
+    font-size: var(--fs-title);
+    font-weight: var(--fw-700);
+    color: var(--clr-primary-Cyan);
+    padding-bottom: 1.5rem;
+}
+
+.subtitle {
+    padding-bottom: 1.5rem;
+    color: var(--clr-primary-Bright-Yellow);
+}
+
+.description {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.subscription {
+    background-color: var(--clr-primary-Cyan);
+    color: white;
+    padding: 1.5rem;
+}
+
+.sub-header {
+    font-size: 1.5em;
+    padding-bottom: 1.5rem;
+}
+
+.price-container {
+    display: flex;
+}
+
+.dollar-amount {
+    font-size: 2.5rem;
+}
+
+.per-month {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.price-desc {
+    padding: 1rem 0;
+}
+
+.signup-btn {
+    background-color: var(--clr-primary-Bright-Yellow);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    width: 100%;
+    box-shadow: -2px 25px 22px -9px rgba(0, 0, 0, 0.2);
+
+}
+
+.information-container {
+    background-color: var(--clr-primary-Off-Cyan);
+    color: white;
+    padding: 1.5rem;
+}
+
+.price-col-title {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+ul li {
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:37em) {
+    .main-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .community-section{
+        width: 40em;
+    }
+    .flex-container-bottom-row{
+        display: flex;
+    }
+    .subscription{
+        width: 20em;
+    }
+    .information-container{
+        width:20em;
+    }
+}
